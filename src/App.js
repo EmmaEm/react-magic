@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './images/8-ball.png';
+import predictionBall from './images/prediction-ball.png';
 import './App.css';
 
 class App extends Component {
@@ -8,11 +9,12 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Magic 8 Ball!!!</h2>
+          <h2>Tap the magic eight ball below to reveal your fortune.</h2>
+          <img src={predictionBall} className="prediction-ball" alt="eight ball showing the prediction screen" />
         </div>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> */}
       </div>
     );
   }
