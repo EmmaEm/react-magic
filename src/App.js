@@ -21,24 +21,31 @@ class FortuneBall extends Component {
   constructor() {
     super();
     this.state = {
-      fortune:null,
+      fortune:"I know all",
     }
   }
 
   shakeBall() {
     const fortunes = ["Yes", "No", "Maybe"];
-    //choose a fortune and add it to the state
     const fortune = fortunes[Math.floor(Math.random()*fortunes.length)]
-    console.log(fortune, "is the fortune");
-
-    //this.setState({squares: squares});
+    this.setState({fortune: fortune});
   }
 
   render() {
     return (
-      <input type="image" src={predictionBall} className="prediction-ball" alt="eight ball showing the prediction screen" onClick={() => this.shakeBall()} />
+      <div>
+        <Triangle value={this.state}/>
+        <input type="image" src={predictionBall} className="prediction-ball" alt="eight ball showing the prediction screen" onClick={() => this.shakeBall()} />
+      </div>
     )
   }
+}
+
+function Triangle(props) {
+  console.log(props);
+  return (
+    <p>{props.value.fortune}</p>
+  )
 }
 
 export default App;
