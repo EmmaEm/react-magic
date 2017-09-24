@@ -28,6 +28,12 @@ body {
 
 .prediction-ball{
   margin-top: 30px;
+
+}
+
+input:focus{
+    outline: none;
+    
 }
 
 @keyframes App-logo-spin {
