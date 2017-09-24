@@ -9,7 +9,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Tap the magic eight ball below to reveal your fortune.</h2>
+          {/* <h2>Tap the magic eight ball below to reveal your fortune.</h2> */}
+          <h2>Concentrate on a question dear to your heart.</h2>
+          <h2>To reveal your fortune, tap the magic 8 ball.</h2>
         </div>
         <FortuneBall />
       </div>
@@ -34,14 +36,14 @@ class FortuneBall extends Component {
   render() {
     return (
       <div className="ballAndFortune">
-        <Triangle value={this.state}/>
+        <Fortune value={this.state}/>
         <input type="image" src={predictionBall} className="prediction-ball" alt="eight ball showing the prediction screen" onClick={() => this.shakeBall()} />
       </div>
     )
   }
 }
 
-function Triangle(props) {
+function Fortune(props) {
   console.log(props);
   return (
     <p className = "fortune">{props.value.fortune}</p>
