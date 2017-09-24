@@ -9,7 +9,6 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          {/* <h2>Tap the magic eight ball below to reveal your fortune.</h2> */}
           <h2>Concentrate on a question dear to your heart.</h2>
           <h2>To reveal your fortune, tap the magic 8 ball.</h2>
         </div>
@@ -29,8 +28,7 @@ class FortuneBall extends Component {
 
   shakeBall() {
     const fortunes = ["Yes", "No", "Maybe", "You trippin'","You will have to be patient", "It is decidedly so", "Better not tell you now", "My sources say no", "My sources say yes", "Hell no", "Make it so", "Concentrate and ask again", "Outlook not so good", "Very doubtful", "Without a doubt", "Most likely", "If you insist", "Why would you even ask that", "Pervert."];
-    const fortune = fortunes[Math.floor(Math.random()*fortunes.length)]
-    this.setState({fortune: fortune});
+    this.setState({fortune: fortunes[Math.floor(Math.random()*fortunes.length)]});
   }
 
   render() {
