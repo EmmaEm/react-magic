@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-You can view a running version of react-magic and find your fortune at [EmmaEm.github.io/react-magic](https://www.EmmaEm.github.io/react-magic)
+You can view a running version of react-magic and find your fortune at [EmmaEm.github.io/react-magic](www.EmmaEm.github.io/react-magic)
 
 # Authors
 
